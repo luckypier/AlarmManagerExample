@@ -3,6 +3,9 @@ package com.zyx.alarmmanagerexample;
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
+import android.media.Ringtone;
+import android.media.RingtoneManager;
+import android.net.Uri;
 import android.util.Log;
 
 import java.text.SimpleDateFormat;
@@ -26,8 +29,11 @@ public class MyAlarmBroadcastReceiver extends BroadcastReceiver {
         SimpleDateFormat s = new SimpleDateFormat("hh:mm:ss");
         String format = s.format(new Date());
 
-        Log.d("MyAlarmBroadcastReceiver", "Alarm just fired");
+        Log.d("MyAlarmBroadcastReceive", "001 Alarm just fired");
         Log.d("time ::", format);
+
+
+        Log.d("MyAlarmBroadcastReceive", "ends");
 
     }
 
